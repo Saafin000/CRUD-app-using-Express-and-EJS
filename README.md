@@ -33,23 +33,3 @@ This app allows users to **create**, **view**, **edit**, and **delete** posts.
 | Method-Override| Enable PATCH/DELETE in HTML forms |
 | UUID           | Generate unique post IDs          |
 | HTML & CSS     | Frontend design                   |
-
----
-
-## 📁 Folder Structure
-
-crud-app/
-│
-├── views/ # EJS Templates
-│ ├── index.ejs # Homepage showing all posts
-│ ├── new.ejs # Form to create a post
-│ ├── edit.ejs # Form to edit a post
-│ └── show.ejs # Single post detail view
-│
-├── public/ # Static assets like CSS
-│ └── style.css
-│
-├── app.js # Main server file with all logic
-├── posts.json # Local JSON file acting as a database
-├── package.json # Project metadata and dependencies
-└── README.md # Project documentation
