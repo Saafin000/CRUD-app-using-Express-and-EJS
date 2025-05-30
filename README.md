@@ -27,11 +27,29 @@ This is a simple **CRUD (Create, Read, Update, Delete)** application built with 
 
 ---
 
+## 📁 Folder Structure
+
+crud-app/
+│
+├── views/ # EJS Templates
+│ ├── index.ejs # Homepage showing all posts
+│ ├── new.ejs # Form to create a post
+│ ├── edit.ejs # Form to edit a post
+│ └── show.ejs # Single post detail view
+│
+├── public/ # Static assets like CSS
+│ └── style.css
+│
+├── app.js # Main server file with all logic
+├── posts.json # Local JSON file acting as a database
+├── package.json # Project metadata and dependencies
+└── README.md # Project documentation
+
 ## 🚀 Getting Started
 
 ### 📦 Prerequisites
 
-Make sure you have Node.js and npm installed:
+Ensure Node.js and npm are installed on your system.
 
 ```bash
 node -v
