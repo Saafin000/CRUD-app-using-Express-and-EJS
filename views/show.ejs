@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head") %>
+    <title>View Post</title>
+</head>
+<body>
+    <h1>Post by @<%= post.username %></h1>
+    <div class="container">
+        <div class="post">
+            <div class="user">@<%= post.username %></div>
+            <div class="content"><%= post.content %></div>
+            <a href="/posts/<%= post.id %>/edit">Edit</a>
+            <form action="/posts/<%= post.id %>?_method=DELETE" method="POST" style="display:inline;">
+                <button>Delete</button>
+            </form>
+        </div>
+        <a href="/posts" class="btn">← Back to Posts</a>
+    </div>
+</body>
+</html>

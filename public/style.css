@@ -1,0 +1,99 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #4a148c;
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.post:hover {
+    transform: scale(1.02);
+}
+
+.user {
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-bottom: 10px;
+}
+
+.content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #1565c0;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0d47a1;
+}
+
+button, .btn {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #4a148c;
+}
+
+form {
+    margin-top: 15px;
+}
+
+textarea, input[type="text"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea:focus, input:focus {
+    border-color: #6a1b9a;
+    outline: none;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}

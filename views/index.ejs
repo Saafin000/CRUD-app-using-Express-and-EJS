@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head") %>
+    <title>All Posts</title>
+</head>
+<body>
+    <h1>All Posts</h1>
+    <div class="container">
+        <a href="/posts/new" class="btn">+New Post</a>
+        <% posts.forEach(post => { %>
+            <div class="post">
+                <div class="user">@<%= post.username %></div>
+                <div class="content"><%= post.content %></div>
+                <a href="/posts/<%= post.id %>">View</a>
+                <a href="posts/<%= post.id %>/edit">Edit</a>
+                <form action="/posts/<%= post.id %>?_method=DELETE" method="post" style="display:inline">
+                    <button>Delete</button>
+                </form>
+            </div>
+        <% }) %>    
+    </div>
+</body>
+</html>

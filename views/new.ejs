@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head") %>
+    <title>New Post</title>
+</head>
+<body>
+    <h1>Create a New Post</h1>
+    <div class="container">
+        <form action="/posts" method="post">
+            <label>Username</label>
+            <input type="text" name="username" required>
+            <label>Content</label>
+            <textarea name="content" required></textarea>
+            <button type="submit">Post</button>
+        </form>
+        <br>
+        <a href="/posts" class="btn"><-Back to Post</a>
+    </div>
+</body>
+</html>

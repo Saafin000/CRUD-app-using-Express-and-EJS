@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head") %>
+    <title>Edit Post</title>
+</head>
+<body>
+    <h1>Edit Post</h1>
+    <div class="container">
+        <form action="/posts/<%= post.id %>?_method=PATCH" method="POST">
+            <label>Edit Content</label>
+            <textarea name="content" required><%= post.content %></textarea>
+            <button type="submit">Update</button>
+        </form>
+        <a href="/posts" class="btn">← Cancel</a>
+    </div>
+</body>
+</html>
